@@ -8,7 +8,8 @@ public class CalAdd {
 
 		do {
 			System.out.print("1. ADD TWO Numbers\n");
-			System.out.print("2. Exit\n\n");
+			System.out.print("2. SUBTRACT TWO Numbers\n");
+			System.out.print("3. Exit\n\n");
 			System.out.print("Enter Your Choice : ");
 			choice = scan.next().charAt(0);
 			switch(choice) {
@@ -20,7 +21,15 @@ public class CalAdd {
 					System.out.print("Result = "+res);
 					break;
 
-				case '2' :
+				case '2' : 
+					System.out.print("Enter Two Number : ");
+					a = scan.nextFloat();
+					b = scan.nextFloat();
+					res = a-b;
+					System.out.print("Result = "+res);
+					break;
+
+				case '3' :
 					System.exit(0);
 					break;
 
@@ -29,6 +38,6 @@ public class CalAdd {
 					break;
 			}
 			System.out.print("\n-----------------------------------\n");
-		} while(choice != 2);
+		} while(choice != 3);
 	}
 }
